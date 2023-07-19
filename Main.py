@@ -132,7 +132,7 @@ as barragens são limite para os peixes, caso eles passem por uma delas é conta
 contador_a = 0 #essa variável armazena a quantidade de peixes que passaram pela barragem A
 contador_b = 0 #essa variável armazena a quantidade de peixes que passaram pela barragem B
 def testar_passagem(x,y,peixe):
-    global contador_a, contador_b
+    global contador_a, contador_b   
     if x > 270 and 0<y<=260:
         peixe.hideturtle()
         peixes1.remove(peixe)
@@ -168,6 +168,7 @@ def escrever_info(contador):
 
 
 #Definindo os objetos da simulação, que nesse caso vão ser peixes e um jacaré
+#alteração
 register_shape("peixe.gif")
 register_shape("jacare.gif")
 register_shape("jacare2.gif")
